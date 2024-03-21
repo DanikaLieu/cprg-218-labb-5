@@ -144,6 +144,7 @@
   padding: 10px; /* Add some padding to create space around the text */
   background-color: #ffe8e8;
   color: #8e3d56;
+  font-family: "Merriweather", serif;
 }
 
 
@@ -356,13 +357,14 @@
 .card-content h3 {
   margin-top: 0;
   color: #8e3d56;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Yatra One', sans-serif;
   font-size: 20px;
+
 }
 
 .card-content p {
   color: rgba(70, 24, 70, 0.8);
-  font-family: "Merriweather", serif;
+  font-family: 'Yatra One', sans-serif;
   line-height: 1.5;
 }
 
@@ -374,6 +376,7 @@
   padding: 10px; /* Add some padding to create space around the text */
   background-color: #ffe8e8;
   color: #8e3d56;
+  font-family: "Merriweather", serif;
   
 }
 

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/fonts.css">
+  <link rel="stylesheet" type="text/css" href="styles/global.css">
+  <link rel="stylesheet" type="text/css" href="styles/lab_four_starter.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap">
+
+
+  <title>Common Website Features</title>
+</head>
+<body>
+  <section id="Hero">
+  <div class="hero-container">
+      <img class="hero-image" src="Assets/hero-banner.jpg"Hero Image">
+    <div class="Hero-Text">
+      <h1>Blossoming Beauty</h1>
+      <p>Start Your Floral Adventure Now and Discover a World of Blossoming Beauty.</p>
+      <input type="button" class="but-ton" onclick="location.href='Second_index.html';" value="Discover The Garden" />
+    </div>
+  </div>
+  </section>
+
+  <section id="about">
+    <div class="main">
+      <img src="Assets/Perfume-Content.jpg" alt="Content Image">
+      <div class="about-text">
+        <h1>Garden Of Inspiration</h1>
+        <p>Step Into Our Garden of Inspiration and Uncover Endless Floral Treasures Await!</p>
+        <button class="but-ton"><a href="#contacts">Learn more</a></button>
+      </div>
+    </div>
+  </section>
+  <section id="accordion">
+    <button class="accordion">Section 1<i class="fas fa-plus"></i></button>
+    <div class="panel">
+      <p>Our Flower Varieties: Explore a diverse range of floral varieties, from classic roses to exotic orchids. Each bloom is carefully curated to bring nature's beauty into your life, whether you're celebrating a special occasion or simply brightening your day. Discover the perfect flower for every moment.</p>
+    </div>
+
+    <button class="accordion">Section 2<i class="fas fa-plus"></i></button>
+    <div class="panel">
+      <p>The Art of Arrangement: Dive into the artistry of floral arrangement with our expert tips and techniques. Learn how to create stunning bouquets, centerpieces, and floral décor that capture the essence of every season and occasion. Unleash your creativity and let your floral visions bloom.</p>
+    </div>
+
+    <button class="accordion">Section 3<i class="fas fa-plus"></i></button>
+    <div class="panel">
+      <p>Flower Care Tips: Extend the lifespan of your blooms with our comprehensive flower care guide. From proper watering techniques to ideal storage conditions, we provide practical advice to help you keep your flowers fresh and vibrant longer. With our tips, you can enjoy the beauty of your floral arrangements for days to come.</p>
+    </div>
+  </section>
+  </section>
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      
+      this.classList.toggle("active");
+  
+      
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+        this.querySelector('i').classList.remove('fa-minus');
+        this.querySelector('i').classList.add('fa-plus');
+      } else {
+        panel.style.display = "block";
+        this.querySelector('i').classList.remove('fa-plus');
+        this.querySelector('i').classList.add('fa-minus');
+      }
+    });
+  }
+</script>
+
+<section id="card-section">
+  <h2>Featured Cards</h2>
+  <div class="card-container">
+    <div class="card">
+      <img src="Assets/Roses.jpg" alt="Card Image 1">
+      <div class="card-content">
+        <h3>Card Title 1</h3>
+        <p>Card description goes here...</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="Assets/Roses.jpg" alt="Card Image 2">
+      <div class="card-content">
+        <h3>Card Title 2</h3>
+        <p>Card description goes here...</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="Assets/Roses.jpg" alt="Card Image 3">
+      <div class="card-content">
+        <h3>Card Title 3</h3>
+        <p>Card description goes here...</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="video-section">
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</section>
+<div class="card-contents">
+  <h3 class="subheader">
+    Jewlery
+  </h3>
+  <h4 class="header">
+    Jewlery Collection 
+  </h4>
+  <p class="paragraph">
+    Nice stunning Jewlery Collection
+  </p>
+  
+<section id="contacts">
+  <div class="footer-container">
+    <div class="footer-row">
+      <div class="footer-col">
+        <h4>Company</h4>
+        <p>Petals & Posies is a premier floral boutique dedicated to crafting exquisite floral experiences that captivate the senses and elevate any occasion. With a passion for creativity and a commitment to quality, we specialize in curating luxurious floral arrangements, bespoke bouquets, and stunning event décor. Whether you're celebrating life's milestones, expressing love and gratitude, or simply indulging in the beauty of nature, Petals & Posies is your destination for floral perfection.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Link</h4>
+        <ul>
+          <li><a href="#Hero"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#about"><i class="fas fa-info-circle"></i> Content</a></li>
+          <li><a href="#accordion"><i class="fas fa-list-ul"></i> Accordion</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d321203.7052623736!2d-114.41746851454111!3d51.02715964129616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537170039f843fd5%3A0x266d3bb1b652b63a!2sCalgary%2C%20AB!5e0!3m2!1sen!2sca!4v1709824759838!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+
+<div class="copyrightYear">
+  <script>
+    window.onload = function() {
+      var currentDate = new Date().getFullYear();
+      var copyrightElement = document.getElementById('copyright');
+      copyrightElement.innerHTML = '&copy; ' + currentDate + ' Danika Lieu. All rights reserved.';
+    };
+  </script>
+</div>
+
+<div class="footer-bottom">
+  <footer>
+    <p id="copyright"></p>
+  </footer>
+</div>
+
+</body>
+</html>

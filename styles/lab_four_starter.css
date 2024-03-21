@@ -1,0 +1,396 @@
+.hero-container {
+  color: #191919;
+  height: 100vh;
+  position: relative; /* Add this to position the content inside */
+  background-image: linear-gradient(rgba(44, 7, 7, 0.5), rgba(103, 39, 39, 0.5));
+  padding: 20px; /* Add padding to create space around content */
+  box-sizing: border-box;
+}
+  
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  z-index: -1; 
+}
+
+.Hero-Text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+#about {
+  width: 100%;
+  background-color: #ffe8e8;
+  height: 500px;
+  display: flex; /* Add this to make children flex items */
+  align-items: center; /* Vertically center align items */
+  justify-content: flex-start;
+  padding-bottom: 5%;
+  background-image: linear-gradient(rgba(103, 39, 39, 0.5));
+}
+
+.about-text {
+  flex: 1; /* Let the text content take remaining space */
+  padding: 0 20px; /* Add padding for spacing */
+  margin: 0 20px;
+}
+
+.main img{
+  height: 64%;
+  width: 64%; 
+  align-self: flex-start;
+  padding: 0 20px;
+  margin: 20px 20px;
+  box-sizing: border-box;
+  flex: 1;
+  margin-left: -100px;
+}
+
+.main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-text h1 {
+  color: #8e3d56;
+  font-size: 40px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  margin-left: 60px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.about-text p {
+  color: rgba(70, 24, 70, 0.8);
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+.but-ton {
+  background-color: #8e3d56;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 0;
+  transition: .4s;
+  position: relative; 
+}
+
+.but-ton:hover {
+  background-color: transparent;
+  border: 2px solid #6f0426;
+  cursor: pointer;
+}
+
+.but-ton a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  }
+
+
+.but-ton::after {
+  content: "\203A"; 
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+
+.accordion {
+  background-color:#ffe8e8;
+  color: rgba(70, 24, 70, 0.8);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: 2px #6f0426;
+  outline: none;
+  transition: 0.4s;
+  font-size: 16px;
+  background-image: linear-gradient(rgba(103, 39, 39, 0.5)); 
+}
+
+
+.active, .accordion:hover {
+  background-color: #8e3d56;
+  border: 2px solid #ff95b3;
+  cursor: pointer;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #ffe8e8;
+  display: none;
+  overflow: hidden;
+  color: rgba(70, 24, 70, 0.8);
+}
+
+.panel p {
+  margin-bottom: 30px;
+}
+
+/* Style the plus and minus icons */
+.accordion i {
+  float: right;
+}
+
+
+.footer-container  {
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(to right, #ffe8e8, #8e3d56);
+  color: #fff;
+  padding: 100px 0 30px;
+  font-size: 13px;
+  line-height: 20px;
+  padding-bottom: 9%; /* Adjust this value as needed */
+}
+
+
+
+.footer-col iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: relative;
+}
+
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #bbbbbb;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+  padding-left: 8px;
+}
+
+
+.footer-bottom {
+  background: linear-gradient(to right, #ffe8e8, #8e3d56);
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  color: #fcfc;
+}
+
+.footer-col P {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+
+
+@media (max-width: 767px) {
+  .hero-container {
+    height: auto; 
+  }
+
+  .Hero-Text {
+    position: static; 
+    transform: none; 
+    padding: 20px; 
+  }
+
+  #about {
+    height: auto; 
+    flex-direction: column; 
+  }
+
+  .main {
+    flex-direction: column; 
+  }
+
+  .main img {
+    height: auto; 
+    width: 100%; 
+    margin-left: 0; 
+  }
+
+  .about-text {
+    margin: 20px 0; 
+  }
+
+  .footer-col {
+    width: 50%; 
+    margin-bottom: 30px; 
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .main {
+    width: 90%; 
+  }
+
+  .about-text h1 {
+    font-size: 32px; 
+  }
+
+  .about-text p {
+    font-size: 16px; 
+  }
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #ffe8e8;
+  padding: 20px;
+}
+
+.card {
+  width: 300px;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 20px;
+  background-color: ##ffe8e8;
+}
+
+.card-content h3 {
+  margin-top: 0;
+  color: #191919;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+}
+
+.card-content p {
+  color: #8e3d56;
+  font-family: "Merriweather", serif;
+  line-height: 1.5;
+}
+
+/* Style for the heading in the card section */
+#card-section h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #8e3d56; /* You can adjust the color as needed */
+  margin-bottom: 20px;
+  font-family: "Arial", sans-serif; /* You can adjust the font family */
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; 
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-contents {
+  background-color: #ffe8e8;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .video-responsive {
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  }
+}

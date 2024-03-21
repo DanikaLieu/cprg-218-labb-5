@@ -38,7 +38,7 @@
   align-items: center; /* Vertically center align items */
   justify-content: flex-start;
   padding-bottom: 5%;
-  background-image: linear-gradient(rgba(103, 39, 39, 0.5));
+  background-image: rgba(103, 39, 39, 0.5);
 }
 
 .about-text {
@@ -48,8 +48,8 @@
 }
 
 .main img{
-  height: 64%;
-  width: 64%; 
+  height: 40%;
+  width: 40%; 
   align-self: flex-start;
   padding: 0 20px;
   margin: 20px 20px;
@@ -134,7 +134,16 @@
   outline: none;
   transition: 0.4s;
   font-size: 16px;
-  background-image: linear-gradient(rgba(103, 39, 39, 0.5)); 
+  background-image: rgba(103, 39, 39, 0.5); 
+}
+
+#accordion h2 {
+  text-align: center;
+  font-size: 24px;
+  margin: 0; /* Add this to remove the default margin */
+  padding: 10px; /* Add some padding to create space around the text */
+  background-color: #ffe8e8;
+  color: #8e3d56;
 }
 
 
@@ -166,7 +175,7 @@
   width: 100%;
   bottom: 0;
   background: linear-gradient(to right, #ffe8e8, #8e3d56);
-  color: #fff;
+  color: rgba(70, 24, 70, 0.8);
   padding: 100px 0 30px;
   font-size: 13px;
   line-height: 20px;
@@ -196,7 +205,7 @@
 
 .footer-col h4 {
   font-size: 18px;
-  color: #fff;
+  color: #8e3d56;
   text-transform: uppercase;
   margin-bottom: 30px;
   font-weight: 500;
@@ -208,7 +217,7 @@
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: #e91e63;
+  background-color: #8e3d56;
   height: 2px;
   box-sizing: border-box;
   width: 50px;
@@ -221,10 +230,10 @@
 .footer-col ul li a {
   font-size: 16px;
   text-transform: capitalize;
-  color: #bbbbbb;
+  color: rgba(70, 24, 70, 0.8);
   text-decoration: none;
   font-weight: 300;
-  color: #bbbbbb;
+  color: rgba(70, 24, 70, 0.8);
   display: block;
   transition: all 0.3s ease;
 }
@@ -245,7 +254,7 @@
   font-size: 14px;
   word-spacing: 2px;
   text-transform: capitalize;
-  color: #fcfc;
+  color: #8e3d56;
 }
 
 .footer-col P {
@@ -341,37 +350,42 @@
 
 .card-content {
   padding: 20px;
-  background-color: ##ffe8e8;
+  background-color: #ffe8e8;
 }
 
 .card-content h3 {
   margin-top: 0;
-  color: #191919;
+  color: #8e3d56;
   font-family: "Ubuntu", sans-serif;
   font-size: 20px;
 }
 
 .card-content p {
-  color: #8e3d56;
+  color: rgba(70, 24, 70, 0.8);
   font-family: "Merriweather", serif;
   line-height: 1.5;
 }
 
 /* Style for the heading in the card section */
-#card-section h2 {
+#cards h2 {
   text-align: center;
   font-size: 24px;
-  color: #8e3d56; /* You can adjust the color as needed */
-  margin-bottom: 20px;
-  font-family: "Arial", sans-serif; /* You can adjust the font family */
+  margin: 0; /* Add this to remove the default margin */
+  padding: 10px; /* Add some padding to create space around the text */
+  background-color: #ffe8e8;
+  color: #8e3d56;
+  
 }
 
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; 
-  padding-top: 30px;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
+  max-width: 100%; /* Make the video container take up the full width */
+  margin: 0 auto; /* Center the video container horizontally */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+  background-color: #ffe8e8;
 }
 
 .video-container iframe,
@@ -382,11 +396,16 @@
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: #ffe8e8;
 }
 
 .card-contents {
   background-color: #ffe8e8;
   text-align: center;
+  margin: 0; /* Add this to remove the default margin */
+  padding: 10px; /* Add some padding to create space around the text */
+  background-color: #ffe8e8;
+  color: #8e3d56;
 }
 
 @media (max-width: 768px) {

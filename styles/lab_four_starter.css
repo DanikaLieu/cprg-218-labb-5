@@ -418,7 +418,9 @@
 }
 
 .search {
-  width: 100%;
+  width: 80%; /* Adjust the width as needed */
+  max-width: 400px; /* Limit the maximum width if necessary */
+  margin: 0 auto; /* Center the search bar horizontally */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -432,3 +434,4 @@
   border-color: #007bff; /* Change to your preferred focus color */
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Change to your preferred focus shadow */
 }
+

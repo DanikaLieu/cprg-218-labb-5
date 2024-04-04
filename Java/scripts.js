@@ -41,17 +41,11 @@ async function fetchNewsData(query) {
   }
 }
 
-/**
- * Render news results.
- */
 
-/**
- * Option 2 Enhanced
- */
 async function renderOption2Enhanced(query) {
   const newsData = await fetchNewsData(query);
   const cards = createCardElements(newsData);
-  const resultsContainer = document.getElementById("option-2-enhanced-results");
+  const resultsContainer = document.getElementById("filtering-option-results");
   resultsContainer.innerHTML = cards;
 }
 
@@ -63,9 +57,9 @@ function searchbarEventHandler() {
   renderOption2Enhanced(query);
 }
 
-// Attach event listener to the search bar
+
 const searchbar = document.getElementById("searchbar");
 searchbar.addEventListener("keyup", searchbarEventHandler);
 
-// Initial rendering (you can set an initial query if needed)
-renderOption2Enhanced('technology'); // Initial query for example
+
+renderOption2Enhanced('technology'); 

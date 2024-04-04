@@ -1,11 +1,9 @@
-// Constants for News API
+
 const NEWS_API_KEY = '8b9e6ac56923414fa2aa072cea1c636e';
 const NEWS_API_BASE_URL = 'https://newsapi.org/v2';
 const NEWS_API_ENDPOINT = '/everything';
 
-/**
- * Create one card from news item data.
- */
+
 function createCardElement(item) {
   return `
     <li class="card">
